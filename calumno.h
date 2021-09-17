@@ -1,11 +1,16 @@
 #ifndef CALUMNO_H
 #define CALUMNO_H
 
+#include <iostream>
 
-class cAlumno
-{
+class cAlumno {
+private:
+    int codigo;
+
 public:
-    cAlumno();
+    cAlumno(int codigo);
+
+    void imprimir();
 };
 
 #endif // CALUMNO_H
