@@ -1,16 +1,16 @@
 #ifndef CALUMNO_H
 #define CALUMNO_H
 
-#include <iostream>
+#include "cpersona.h"
 
-class cAlumno {
+class cAlumno : public cPersona {
 private:
     int codigo;
 
 public:
-    cAlumno(int codigo);
+    cAlumno(std::string n, int c);
 
-    void imprimir();
+    void imprimir() override;
 };
 
 #endif // CALUMNO_H

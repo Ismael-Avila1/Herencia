@@ -1,9 +1,7 @@
 #include "calumno.h"
 
-cAlumno::cAlumno(int codigo) {
-    this->codigo = codigo;
-}
+cAlumno::cAlumno(std::string n, int c) : cPersona(n), codigo(c) {}
 
 void cAlumno::imprimir() {
-    std::cout << "\tMi codigo de alumno es: " << codigo << std::endl;
+    std::cout << "Soy " << nombre << ". Mi codigo de alumno es: " << codigo << std::endl;
 }
