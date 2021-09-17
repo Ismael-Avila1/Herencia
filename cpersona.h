@@ -4,14 +4,16 @@
 #include<string>
 #include <iostream>
 
-class cPersona {
+#include "cobjeto.h"
+
+class cPersona : public cObjeto {
 private:
     std::string nombre;
 
 public:
     cPersona(std::string nombre);
 
-    void imprimir();
+    void imprimir() override;
 };
 
 #endif // CPERSONA_H
