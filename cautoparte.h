@@ -1,11 +1,17 @@
 #ifndef CAUTOPARTE_H
 #define CAUTOPARTE_H
 
+#include <iostream>
 
-class cAutoparte
-{
+#include "cobjeto.h"
+
+class cAutoparte : public cObjeto {
+protected:
+    int serie;
+
 public:
-    cAutoparte();
+    cAutoparte(int s);
+    void imprimir() override;
 };
 
 #endif // CAUTOPARTE_H
