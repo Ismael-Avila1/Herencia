@@ -7,7 +7,7 @@
 #include "cobjeto.h"
 
 class cPersona : public cObjeto {
-private:
+protected:
     std::string nombre;
 
 public:
