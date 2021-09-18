@@ -1,17 +1,19 @@
 #ifndef CNODO_H
 #define CNODO_H
 
+#include "cobjeto.h"
+
 class cNodo {
 private:
-    float dato;
+    cObjeto* obj;
     cNodo* pAnt;
     cNodo* pSig;
 
     cNodo();
-    cNodo(float);
+    cNodo(cObjeto*);
 
-    void insertarAdelante(float);
-    float eliminarAdelante();
+    void insertarAdelante(cObjeto*);
+    cObjeto* eliminarAdelante();
 
     friend class cLista;
     friend class cIterador;

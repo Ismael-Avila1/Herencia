@@ -15,8 +15,8 @@ private:
 public:
     cIterador();
 
-    void insertarAdelante(float d);
-    float eliminarAdelante();
+    void insertarAdelante(cObjeto* o);
+    cObjeto* eliminarAdelante();
 
     // Sobrecarga de operadores
     void operator = (cIterador& otro);
@@ -28,7 +28,7 @@ public:
     void operator ++();
     void operator --();
 
-    float& operator *();
+    cObjeto*& operator *();
 
     //Postfijos
     void operator ++(int);

@@ -7,11 +7,11 @@ void cIterador::setNodo(cNodo *pNodo) {
 }
 
 
-void cIterador::insertarAdelante(float d) {
-    pActual->insertarAdelante(d);
+void cIterador::insertarAdelante(cObjeto* o) {
+    pActual->insertarAdelante(o);
 }
 
-float cIterador::eliminarAdelante() {
+cObjeto* cIterador::eliminarAdelante() {
     return pActual->eliminarAdelante();
 }
 
@@ -38,8 +38,8 @@ void cIterador::operator --() {
     pActual = pActual->pAnt;
 }
 
-float &cIterador::operator *() {
-    return pActual->dato;
+cObjeto* &cIterador::operator *() {
+    return pActual->obj;
 }
 
     //Postfijos
@@ -50,3 +50,4 @@ void cIterador::operator ++(int) {
 void cIterador::operator --(int) {
     pActual = pActual->pAnt;
 }
+

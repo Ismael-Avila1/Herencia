@@ -7,11 +7,11 @@ void cReverseIterador::setNodo(cNodo *pNodo) {
 }
 
 
-void cReverseIterador::insertarAdelante(float d) {
-    pActual->insertarAdelante(d);
+void cReverseIterador::insertarAdelante(cObjeto* o) {
+    pActual->insertarAdelante(o);
 }
 
-float cReverseIterador::eliminarAdelante() {
+cObjeto* cReverseIterador::eliminarAdelante() {
     return pActual->eliminarAdelante();
 }
 
@@ -38,8 +38,8 @@ void cReverseIterador::operator --() {
     pActual = pActual->pSig;
 }
 
-float &cReverseIterador::operator *() {
-    return pActual->dato;
+cObjeto* &cReverseIterador::operator *() {
+    return pActual->obj;
 }
 
     // Postfijos
@@ -50,3 +50,4 @@ void cReverseIterador::operator ++(int) {
 void cReverseIterador::operator --(int) {
     pActual = pActual->pSig;
 }
+
