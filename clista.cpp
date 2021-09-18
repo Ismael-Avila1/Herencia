@@ -17,24 +17,24 @@ cLista::~cLista() {
     final.pAnt = &inicio;
 }
 
-void cLista::insertarAdelante(float d) {
-    inicio.insertarAdelante(d);
+void cLista::insertarAdelante(cObjeto* o) {
+    inicio.insertarAdelante(o);
 }
 
-void cLista::insertarAlFinal(float d) {
-    final.pAnt->insertarAdelante(d);
+void cLista::insertarAlFinal(cObjeto* o) {
+    final.pAnt->insertarAdelante(o);
 }
 
-float cLista::eliminarAdelante() {
+cObjeto* cLista::eliminarAdelante() {
     if(isEmpty())
-        return -1;
+        return nullptr;
     else
         return inicio.eliminarAdelante();
 }
 
-float cLista::eliminarAlFinal() {
+cObjeto* cLista::eliminarAlFinal() {
     if(isEmpty())
-        return -1;
+        return nullptr;
     else
         return final.pAnt->pAnt->eliminarAdelante();
 }
@@ -91,4 +91,5 @@ cReverseIterador &cLista::rEnd() {
 
     return r_itEnd;
 }
+
 

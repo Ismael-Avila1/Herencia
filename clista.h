@@ -21,11 +21,11 @@ public:
     cLista();
     ~cLista();
 
-    void insertarAdelante(float d);
-    void insertarAlFinal(float d);
+    void insertarAdelante(cObjeto* o);
+    void insertarAlFinal(cObjeto* o);
 
-    float eliminarAdelante();
-    float eliminarAlFinal();
+    cObjeto* eliminarAdelante();
+    cObjeto* eliminarAlFinal();
 
     int size();
 
