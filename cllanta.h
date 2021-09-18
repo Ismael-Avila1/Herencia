@@ -1,11 +1,16 @@
 #ifndef CLLANTA_H
 #define CLLANTA_H
 
+#include "cautoparte.h"
 
-class cLlanta
-{
+class cLlanta : public cAutoparte {
+private:
+    int rodado;
+
 public:
-    cLlanta();
+    cLlanta(int s, int r);
+
+    void imprimir() override;
 };
 
 #endif // CLLANTA_H
