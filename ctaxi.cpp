@@ -10,5 +10,3 @@ void cTaxi::imprimir() {
 
     std::cout << "Taxi del sitio: " << sitio << std::endl;
 }
-
-

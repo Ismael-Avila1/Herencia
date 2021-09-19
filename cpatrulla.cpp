@@ -10,5 +10,3 @@ void cPatrulla::imprimir() {
 
     std::cout << "La sirena está " << ((sirena == true) ? "encendida" : "apagada") << std::endl;
 }
-
-

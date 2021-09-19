@@ -11,8 +11,6 @@ public:
     cMaestro(std::string n, int c);
 
     void imprimir() override;
-
-
 };
 
 #endif // CMAESTRO_H

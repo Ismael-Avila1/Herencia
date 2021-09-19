@@ -12,5 +12,3 @@ void cBlindado::imprimir() {
 
     std::cout << "Nivel de blindaje: " << blindaje << std::endl;
 }
-
-
