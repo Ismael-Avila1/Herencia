@@ -59,22 +59,12 @@ bool cLista::isFull() {
 }
 
 void cLista::imprimir() {
-//    cIterador it;
+    cIterador it;
 
-//    for(it=m_itBegin; it!=m_itEnd; it++){
-//        it.pActual->obj->imprimir();
-//        std::cout << std::endl << std::endl;
-//    }
-
-    cNodo* aux = inicio.pSig;
-
-    while (aux != &final) {
-        aux->obj->imprimir();
+    for(it=this->begin(); it!=this->end(); it++){
+        it.pActual->obj->imprimir();
         std::cout << std::endl << std::endl;
-
-        aux = aux->pSig;
     }
-
 }
 
 cIterador &cLista::begin() {
