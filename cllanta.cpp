@@ -3,5 +3,5 @@
 cLlanta::cLlanta(int s, int r) : cAutoparte(s), rodado(r) {}
 
 void cLlanta::imprimir() {
-    std::cout << "Numero de serie de la llanta: " << serie << "\n" << "Rodado: " << rodado << std::endl;
+    std::cout << "\tNumero de serie de la llanta: " << serie << "\n" << "\tRodado: " << rodado << std::endl;
 }
