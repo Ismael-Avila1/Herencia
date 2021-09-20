@@ -56,11 +56,9 @@ int main()
     lst.insertarAlFinal(motor2);
     lst.insertarAlFinal(llanta2);
 
-    cout << "se insertaron" << endl << endl;
-
     cout << "imprimiendo lista" << endl << endl;
     lst.imprimir();
-/*
+
     delete alumno1;
     delete alumno2;
 
@@ -82,6 +80,5 @@ int main()
     delete llanta1;
     delete llanta2;
 
-*/
     return 0;
 }
